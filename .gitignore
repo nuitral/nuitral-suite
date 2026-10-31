@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+.angular
+.next
+out
+*.tsbuildinfo
+
+# Turborepo
+.turbo
+
+# Vercel
+.vercel
+
+# Packed artifacts (npm pack)
+*.tgz
+
+# Tool caches
+.eslintcache
+.stylelintcache
+.sass-cache
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage
+
+# Environment
+.env
+.env.*
+!.env.example
+*.local
+
+# Editors
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# OS
+.DS_Store

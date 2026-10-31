@@ -1,0 +1,8 @@
+{
+  "name": "@nuitral/types",
+  "version": "0.0.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  }
+}

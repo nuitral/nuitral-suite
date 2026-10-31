@@ -1,0 +1,9 @@
+{
+  "name": "playground-theming",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@nuitral/theming": "*"
+  }
+}
