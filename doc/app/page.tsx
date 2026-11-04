@@ -1,3 +1,10 @@
+import ThemeControls from '@/components/ThemeControls'
+
 export default function Home() {
-	return <>nuitral doc</>
+	return (
+		<>
+			nuitral doc
+			<ThemeControls />
+		</>
+	)
 }

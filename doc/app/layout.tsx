@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import './globals.scss'
 
 export const metadata: Metadata = {
 	title: 'nuitral',
@@ -11,7 +12,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			{/* 'demo-app' is the rootId the theming hook applies the theme to */}
+			<body id="demo-app" suppressHydrationWarning>
+				{children}
+			</body>
 		</html>
 	)
 }

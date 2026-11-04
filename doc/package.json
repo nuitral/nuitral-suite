@@ -9,9 +9,15 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"@nuitral/core": "^0.0.1-beta.3",
+		"@nuitral/icons": "^0.0.1-alpha.2",
+		"@nuitral/react-ui-suite": "^0.0.1-beta.2",
+		"@nuitral/theming": "^0.0.1-beta.4",
+		"@nuitral/types": "^0.0.1-beta.4",
 		"next": "^16.4.5",
 		"react": "^19.3.1",
-		"react-dom": "^19.3.1"
+		"react-dom": "^19.3.1",
+		"sass": "^1.107.1"
 	},
 	"devDependencies": {
 		"@types/node": "^22.15.30",

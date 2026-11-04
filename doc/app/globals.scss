@@ -1,0 +1,100 @@
+@use '@nuitral/theming' as nuitral;
+
+//Default
+$theme-nuitral: nuitral.generate-theme();
+
+@include nuitral.apply-theme($theme-nuitral);
+
+$light-mode: (
+	primary: #ff0054,
+	secondary: #00d8ff,
+	accent: #ffdc00,
+	error: #ff4136,
+	success: #2ecc40,
+	warning: #ff851b,
+	info: #0074d9,
+	neutral: #b10dc9,
+	background: #fdfefe,
+	surface: #ffffff,
+);
+
+$dark-mode: (
+	primary: #ff337a,
+	secondary: #00a3cc,
+	accent: #ffd700,
+	error: #ff6347,
+	success: #28a745,
+	warning: #ff7733,
+	info: #006699,
+	neutral: #a569bd,
+	background: #1e1e1e,
+	surface: #121212,
+);
+
+$theme-pop: nuitral.generate-theme(
+	(
+		theme-name: 'pop',
+		scale-light: $light-mode,
+		scale-dark: $dark-mode,
+		variables: (
+			misc: (
+				height-atoms: 30px,
+				border-radius-atoms: 25px,
+				corner-shape-atoms: circle,
+				border-radius-molecules: 25px,
+				corner-shape-molecules: circle,
+			),
+		),
+	)
+);
+
+@include nuitral.apply-theme($theme-pop);
+
+// Fluffy
+$theme-fluffy: nuitral.generate-theme(
+	(
+		theme-name: 'fluffy',
+		scale-light: (
+			primary: #b39ddb,
+			secondary: #f8bbd0,
+			accent: #ffe0b2,
+			error: #ef9a9a,
+			success: #a5d6a7,
+			warning: #ffcc80,
+			info: #90caf9,
+			neutral: #bcaaa4,
+			background: #fdf7fb,
+			surface: #ffffff,
+		),
+		scale-dark: (
+			primary: #d1c4e9,
+			secondary: #f48fb1,
+			accent: #ffcc80,
+			error: #e57373,
+			success: #81c784,
+			warning: #ffb74d,
+			info: #64b5f6,
+			neutral: #a1887f,
+			background: #2a2433,
+			surface: #352d40,
+		),
+		variables: (
+			misc: (
+				height-atoms: 44px,
+				border-radius-atoms: 22px,
+				corner-shape-atoms: round,
+				border-radius-molecules: 28px,
+				corner-shape-molecules: round,
+			),
+		),
+	)
+);
+
+@include nuitral.apply-theme($theme-fluffy);
+
+body {
+	margin: 0;
+	min-height: 100dvh;
+	color: nuitral.$text-color;
+	background-color: nuitral.$background;
+}
